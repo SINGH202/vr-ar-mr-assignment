@@ -175,3 +175,21 @@ body {
     opacity: 0;
   }
 }
+
+.circular-img-container {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+.circular-img-container.active-container {
+  width: 36px;
+  height: 36px;
+}
+
+.circular-img-joiner {
+  border: 1px solid white;
+  width: 20px;
+}
+
+
