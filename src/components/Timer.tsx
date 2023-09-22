@@ -14,9 +14,12 @@ export const Timer = () => {
   }, [seconds]);
 
   return (
-    <div className="w-full h-[94vh] flex items-center justify-center z-20">
+    <div className="w-full h-[94vh] flex items-center justify-center z-20 relative">
+      <div className="circle outer-circle w-80 h-80"></div>
+      <div className="circle middle-circle w-64 h-64"></div>
+      <div className="circle inner-circle w-48 h-48"></div>
       <div
-        className={`flex flex-col items-center justify-center gap-2 h-48 w-48 border border-white rounded-full text-center`}>
+        className={`flex flex-col items-center justify-center gap-2 h-48 w-48 rounded-full text-center`}>
         <span className="text-2xl">
           {seconds <= 3 ? (
             <span className={`text-2xl timer-text-inhale`}>INHALE</span>
