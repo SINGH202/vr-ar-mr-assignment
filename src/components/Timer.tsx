@@ -14,19 +14,15 @@ export const Timer = () => {
   }, [seconds]);
 
   return (
-    <div className="w-full h-[94vh] flex items-center justify-center">
+    <div className="w-full h-[94vh] flex items-center justify-center z-20">
       <div
         className={`flex flex-col items-center justify-center gap-2 h-48 w-48 border border-white rounded-full text-center`}>
         <span className="text-2xl">
-          {seconds <= 3 && (
+          {seconds <= 3 ? (
             <span className={`text-2xl timer-text-inhale`}>INHALE</span>
-          )}
-
-          {seconds <= 5 && (
+          ) : seconds <= 5 ? (
             <span className={`text-2xl timer-text-hold`}>HOLD</span>
-          )}
-
-          {seconds <= 8 && (
+          ) : (
             <span className={`text-2xl timer-text-exhale`}>EXHALE</span>
           )}
         </span>
