@@ -25,3 +25,49 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.fade-out-element {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.fade-out-element.fade-out {
+  opacity: 0;
+}
+
+.timer-text-inhale {
+  opacity: 0;
+  animation: fadeOut 4s linear forwards;
+}
+
+.timer-text-hold {
+  opacity: 0;
+  animation: fadeOut 3s linear 3s forwards;
+}
+
+.timer-text-exhale {
+  opacity: 0;
+  animation: fadeOut 4s linear 5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
