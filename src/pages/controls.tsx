@@ -1,4 +1,4 @@
-import { BottomCarousel } from "@/components/BottomCarousal";
+import { BottomCarousel } from "@/components/BottomCarousel";
 import { StaticTextContent } from "@/components/StaticTextContent";
 import Image from "next/image";
 
