@@ -10,7 +10,7 @@ export default function Home() {
   const [seconds, setSeconds] = useState(0);
   const router = useRouter();
   useEffect(() => {
-    if (seconds < 9) {
+    if (seconds < 8) {
       const timer = setInterval(() => {
         setSeconds(seconds + 1);
       }, 1000);
